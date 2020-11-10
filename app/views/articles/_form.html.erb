@@ -1,0 +1,12 @@
+<h1>Editing article</h1>
+<%= simple_form_for (@article) do |f| %>
+  <div>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+  <div>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+  </div>
+  <%= f.submit class: 'btn btn-primary' %>
+<% end %>

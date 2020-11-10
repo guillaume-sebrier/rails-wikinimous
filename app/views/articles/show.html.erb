@@ -1,2 +1,12 @@
-<h1>Articles#show</h1>
-<p>Find me in app/views/articles/show.html.erb</p>
+<div class="container">
+
+  <h2><%= @article.title %>
+  <%= link_to edit_article_path(@article) do %>
+    <i class="far fa-edit"></i>
+  <% end %>
+  <%= link_to article_path(@article), method: :delete, data: { confirm: "Are you sure?" } do %>
+      <i class="fas fa-trash"></i>
+  <% end %>
+  </h2>
+  <p><%= @article.content %></p>
+</div>

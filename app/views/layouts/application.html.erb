@@ -7,9 +7,15 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:ital,wght@0,500;1,300;1,400&display=swap" rel="stylesheet">
   </head>
 
   <body>
+    <div class="navbar">
+      <div><%= link_to "WikiBTTF", articles_path %></div>
+      <%= link_to "New article", new_article_path  %>
+    </div>
     <%= yield %>
   </body>
 </html>

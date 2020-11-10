@@ -1,3 +1,27 @@
 // Place all the styles related to the articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+  background-color: #F8F8F8;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: space-between;
+  height: 60px;
+  margin-bottom: 24px;
+}
+
+.article-list {
+  list-style: none;
+  font-family: 'Roboto Slab', serif;
+}
+
+.container {
+  width: 50% !important;
+  margin: 0 auto;
+}
+
+
